@@ -11,7 +11,7 @@ button[0].addEventListener('click', function(event){
   if(event.target.classList.contains('fa-stop')){
     song[0].play();
     isPlaying = true;
-    header[0].innerHTML = 'Now Playing: ' + songName[0].innerHTML;
+    header[0].innerHTML = 'Now Playing: <cite>' + songName[0].innerHTML + '</cite>';
   }
   else {
     song[0].pause();
@@ -27,7 +27,7 @@ button[1].addEventListener('click', function(event){
   button[1].classList.toggle('fa-stop');
   if(button[1].classList.contains('fa-stop')){
     song[1].play();
-    header[0].innerHTML = 'Now Playing: ' + songName[1].innerHTML;
+    header[0].innerHTML = 'Now Playing: <cite>' + songName[1].innerHTML + '</cite>';
   }
   else {
     song[1].pause();
@@ -46,7 +46,7 @@ button[2].addEventListener('click', function(event){
   button[2].classList.toggle('fa-stop');
   if(button[2].classList.contains('fa-stop')){
     song[2].play();
-    header[0].innerHTML = 'Now Playing: ' + songName[2].innerHTML;
+    header[0].innerHTML = 'Now Playing: <cite>' + songName[2].innerHTML + '</cite>';
   }
   else {
     song[2].pause();
@@ -65,7 +65,7 @@ button[3].addEventListener('click', function(event){
   button[3].classList.toggle('fa-stop');
   if(button[3].classList.contains('fa-stop')){
     song[3].play();
-    header[0].innerHTML = 'Now Playing: ' + songName[3].innerHTML;
+    header[0].innerHTML = 'Now Playing: <cite>' + songName[3].innerHTML + '</cite>';
   }
   else {
     song[3].pause();
