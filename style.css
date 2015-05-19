@@ -3,29 +3,40 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Helvetica Neue Light', sans-serif;
   font-size: 23px;
-  font-weight: 600;
+  font-weight: 550;
   width: 70%;
   margin: 0 auto;
+  color: #313131;
 }
 
 header {
   height: 3em;
-  background-color: #000;
+  background-color: #313131;
   color: white;
   text-align: center;
   padding: 1em;
 }
 
+header cite {
+  font-style: italic;
+}
+
+div {
+  padding: .5em;
+}
+
 i {
   float: left;
+  color: #313131;
+  margin-right: .75em;
 }
 
 hr {
   clear: both;
-  background-color: lightgray;
   height: 1px;
   color: lightgray;
+  background-color: lightgray;
   border: none;
 }
