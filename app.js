@@ -2,7 +2,13 @@ var button = document.getElementsByClassName('fa');
 var song =document.getElementsByTagName('audio');
 var header = document.getElementsByTagName('header');
 var songName = document.getElementsByTagName('cite');
-var isPlaying = false;
+var isPlaying = false; //have not implemented this
+
+//brute force method
+//understand now that I need two for loops, one to cycle
+//through the buttons and one to cycle through the
+//songs
+//implement isPlaying
 
 button[0].addEventListener('click', function(event){
 
@@ -38,10 +44,6 @@ button[1].addEventListener('click', function(event){
 
 button[2].addEventListener('click', function(event){
 
-  console.dir(event);
-  console.log(event.target);
-  console.dir(event.target);
-  console.log(button);
   event.target.classList.toggle('fa-play');
   button[2].classList.toggle('fa-stop');
   if(button[2].classList.contains('fa-stop')){
@@ -57,10 +59,6 @@ button[2].addEventListener('click', function(event){
 
 button[3].addEventListener('click', function(event){
 
-  console.dir(event);
-  console.log(event.target);
-  console.dir(event.target);
-  console.log(button);
   event.target.classList.toggle('fa-play');
   button[3].classList.toggle('fa-stop');
   if(button[3].classList.contains('fa-stop')){
