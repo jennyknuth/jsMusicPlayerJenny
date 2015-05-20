@@ -13,7 +13,7 @@ for (i = 0; i < button.length; i++){
     }
     else{
       song.pause();
-      header.innerHTML = 'Select a song';
+      header.innerHTML = 'Select a Song';
     }
   });
 }
