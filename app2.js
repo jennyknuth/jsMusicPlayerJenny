@@ -6,12 +6,16 @@ for (i = 0; i < button.length; i++){
     var song = event.target.parentNode.childNodes[5];
     var header = event.target.parentNode.parentNode.childNodes[1];
     var title = event.target.parentNode.childNodes[3].childNodes[0];
-    for (j = 0; j < button.length; j++){
+
+    if (event.target.classList.contains('fa-play')){
+      for (j = 0; j < button.length; j++){
       button[j].className = 'fa fa-play';
       audio[j].pause();
-    };
-    event.target.classList.toggle('fa-play');
+      }
+    }
+
     event.target.classList.toggle('fa-stop');
+    event.target.classList.toggle('fa-play');
     if (event.target.classList.contains('fa-stop')){
       song.play();
       header.innerHTML = 'Now Playing: <cite>' + title.innerHTML + '</cite>';
@@ -19,6 +23,7 @@ for (i = 0; i < button.length; i++){
     else{
       song.pause();
       header.innerHTML = 'Select a Song';
+    //  isPlaying = false;
     }
   });
 }
