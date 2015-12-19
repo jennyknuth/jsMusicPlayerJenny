@@ -16,6 +16,7 @@ for (i = 0; i < button.length; i++){
 
     event.target.classList.toggle('fa-stop');
     event.target.classList.toggle('fa-play');
+
     if (event.target.classList.contains('fa-stop')){
       song.play();
       header.innerHTML = 'Now Playing: <cite>' + title.innerHTML + '</cite>';
@@ -23,7 +24,6 @@ for (i = 0; i < button.length; i++){
     else{
       song.pause();
       header.innerHTML = 'Select a Song';
-    //  isPlaying = false;
     }
   });
 }
